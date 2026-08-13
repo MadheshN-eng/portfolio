@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madhesh N | Full Stack & AI Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Madhesh N - Full Stack & AI Developer proficient in MERN Stack, FastAPI, Python, MongoDB, Supabase, and AI Web Applications.">
+  <meta name="keywords" content="Madhesh N, Full Stack Developer, MERN Stack, FastAPI, AI Developer, Chennai, Software Engineer Portfolio">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Background Glowing Orbs -->
+  <div class="bg-glow-container">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+
+  <div class="container">
+    
+    <!-- Top Navigation Header -->
+    <header class="top-nav">
+      <div class="nav-brand">
+        <div class="brand-avatar">MN</div>
+        <div class="brand-info">
+          <h1>MADHESH N</h1>
+          <p>Full Stack & AI Developer • Chennai, TN</p>
+        </div>
+      </div>
+      
+      <div class="status-badge">
+        <span class="pulse-dot"></span>
+        <span>Open to Roles (Intern / FTE)</span>
+      </div>
+
+      <div class="nav-actions">
+        <button class="btn btn-secondary" onclick="copyEmail()">
+          <i class="fa-regular fa-envelope"></i>
+          <span>Email Me</span>
+        </button>
+
+        <a href="https://github.com/MadheshN-eng" target="_blank" class="icon-btn" title="GitHub Profile">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://linkedin.com/in/Madhesh-N" target="_blank" class="icon-btn" title="LinkedIn Profile">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
+    </header>
+
+    <!-- Tech Stack Filter Bar -->
+    <div class="filter-bar">
+      <button class="filter-chip active" data-filter="all">⚡ View All</button>
+      <button class="filter-chip" data-filter="ai">🤖 AI & ML Infrastructure</button>
+      <button class="filter-chip" data-filter="mern">💻 MERN Stack</button>
+      <button class="filter-chip" data-filter="fastapi">🔥 FastAPI & Python</button>
+      <button class="filter-chip" data-filter="database">🗄️ Supabase & MongoDB</button>
+    </div>
+
+    <!-- Bento Grid Section -->
+    <main class="bento-grid">
+      
+      <!-- HERO BENTO TILE (Col 8) -->
+      <article class="bento-card hero-card col-8">
+        <div>
+          <div class="hero-tag">
+            <i class="fa-solid fa-sparkles"></i> Full Stack & AI Systems Engineering
+          </div>
+          <h2 class="hero-title">
+            Architecting <span class="gradient-text">Scalable MERN, FastAPI & AI-Powered</span> Web Applications.
+          </h2>
+          <p class="hero-description">
+            Computer Science undergraduate with hands-on internship experience building cloud-native microservices, automated AI recruitment platforms, and real-time infrastructure telemetry dashboards.
+          </p>
+        </div>
+        
+        <div class="hero-highlights">
+          <div class="highlight-item">
+            <div class="highlight-icon"><i class="fa-solid fa-bolt"></i></div>
+            <span>4000+ Skillrack Coding Points</span>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <span>B.E. CSE • CGPA 7.56</span>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon"><i class="fa-solid fa-trophy"></i></div>
+            <span>Hackgenix 2025 Participant</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- STATS & PROBLEM SOLVING CARD (Col 4) -->
+      <article class="bento-card stat-box col-4">
+        <div class="card-header-badge" style="width: 100%;">
+          <span class="badge badge-ai"><i class="fa-solid fa-code"></i> Coding Metric</span>
+          <i class="fa-solid fa-fire-flame-curved" style="color: var(--accent-amber);"></i>
+        </div>
+        <div class="stat-number" data-target="4000">4,000+</div>
+        <div class="stat-label">Skillrack Points Achieved</div>
+        <p class="stat-subtext">Demonstrated mastery in Data Structures, Java, C, and Python algorithms across rigorous technical challenges.</p>
+      </article>
+
+      <!-- FEATURED PROJECT 1: DISTOP AI (Col 7) -->
+      <article class="bento-card project-card col-7" data-tech="ai fastapi database">
+        <div class="card-header-badge">
+          <span class="badge badge-ai">🤖 AI Infrastructure Monitoring</span>
+          <button class="btn btn-secondary" onclick="openProjectModal('distop')" style="padding: 0.3rem 0.7rem; font-size: 0.75rem;">
+            Details <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </button>
+        </div>
+        
+        <h3 class="project-title">Distop AI Platform</h3>
+        <div class="project-subtitle">React • FastAPI • Python • MongoDB • Docker</div>
+        
+        <ul class="project-bullets">
+          <li>Architected an AI-driven infrastructure telemetry platform to visualize microservice health in real-time.</li>
+          <li>Implemented ML anomaly detection models & NLP root-cause analysis for immediate incident triage.</li>
+          <li>Engineered responsive analytical dashboards for system resource utilization insights.</li>
+        </ul>
+
+        <div class="tech-tags">
+          <span class="tech-tag">React.js</span>
+          <span class="tech-tag">FastAPI</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">MongoDB</span>
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">NLP</span>
+        </div>
+      </article>
+
+      <!-- EXPERIENCE CARD: MAESTROMINDS INTERNSHIP (Col 5) -->
+      <article class="bento-card col-5">
+        <div class="card-header-badge">
+          <span class="badge badge-fullstack"><i class="fa-solid fa-briefcase"></i> Industry Internship</span>
+          <span style="font-size: 0.75rem; color: var(--text-muted);">Jun 2025 – Jul 2025</span>
+        </div>
+        
+        <h3 class="project-title">Full Stack Developer Intern</h3>
+        <div class="project-subtitle" style="color: var(--accent-cyan);">MAESTROMINDS</div>
+        
+        <ul class="project-bullets" style="margin-top: 0.75rem;">
+          <li>Developed production MERN Stack applications (React.js, Node.js, Express.js, MongoDB).</li>
+          <li>Built REST APIs, performed unit testing, and enhanced database query performance.</li>
+          <li>Collaborated in agile team sprints with senior developers to ship reliable features.</li>
+        </ul>
+      </article>
+
+      <!-- FEATURED PROJECT 2: AI HR SCREENING WITH CODE SANDBOX (Col 7) -->
+      <article class="bento-card project-card col-7" data-tech="ai mern">
+        <div class="card-header-badge">
+          <span class="badge badge-ai">⚡ AI Screening & Code Execution</span>
+          <button class="btn btn-secondary" onclick="openProjectModal('hrscreening')" style="padding: 0.3rem 0.7rem; font-size: 0.75rem;">
+            Details <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </button>
+        </div>
+        
+        <h3 class="project-title">AI-Powered HR Screening App</h3>
+        <div class="project-subtitle">MERN Stack • TypeScript • AI • Piston API</div>
+        
+        <p class="stat-subtext" style="margin-bottom: 0.75rem;">
+          Built an automated candidate evaluation pipeline with secure multi-language Piston API code execution.
+        </p>
+
+        <!-- Interactive Sandbox Widget inside Card -->
+        <div class="code-playground">
+          <div class="playground-header">
+            <span><i class="fa-solid fa-terminal"></i> Live Piston API Sandbox Simulator</span>
+            <div class="playground-controls">
+              <select id="langSelect" style="background: #182030; color: #fff; border: none; font-size: 0.7rem; padding: 0.1rem 0.3rem; border-radius: 4px;">
+                <option value="python">Python 3</option>
+                <option value="javascript">TypeScript/Node</option>
+              </select>
+              <button class="run-btn" id="runCodeBtn">
+                <i class="fa-solid fa-play"></i> Run Test
+              </button>
+            </div>
+          </div>
+          <div class="code-output" id="codeOutput">
+            Click "Run Test" to simulate automated candidate code assessment execution...
+          </div>
+        </div>
+
+        <div class="tech-tags">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">Piston API</span>
+          <span class="tech-tag">JWT Auth</span>
+        </div>
+      </article>
+
+      <!-- PROJECT 3: CRACKERS CRAZE (Col 5) -->
+      <article class="bento-card project-card col-5" data-tech="mern database">
+        <div class="card-header-badge">
+          <span class="badge badge-ecom">🛒 E-Commerce & Logistics</span>
+          <button class="btn btn-secondary" onclick="openProjectModal('crackerscraze')" style="padding: 0.3rem 0.7rem; font-size: 0.75rem;">
+            Details <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </button>
+        </div>
+        
+        <h3 class="project-title">Crackers Craze Platform</h3>
+        <div class="project-subtitle">React • Supabase • Express.js • Node.js</div>
+        
+        <ul class="project-bullets">
+          <li>Bulk-cracker product price comparison & online ordering platform.</li>
+          <li>OTP-based user authentication and vendor product management portal.</li>
+        </ul>
+
+        <div class="tech-tags" style="margin-top: auto;">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Tailwind CSS</span>
+          <span class="tech-tag">Supabase</span>
+          <span class="tech-tag">Express.js</span>
+        </div>
+      </article>
+
+      <!-- SKILLS MATRIX TILE (Col 8) -->
+      <article class="bento-card col-8">
+        <div class="card-header-badge">
+          <span class="badge badge-fullstack"><i class="fa-solid fa-layer-group"></i> Technical Core Matrix</span>
+        </div>
+        
+        <h3 class="project-title" style="font-size: 1.25rem;">Technologies & Frameworks</h3>
+        
+        <div class="tech-grid">
+          <div class="tech-item"><span class="tech-icon-dot dot-react"></span> React.js</div>
+          <div class="tech-item"><span class="tech-icon-dot dot-fastapi"></span> FastAPI</div>
+          <div class="tech-item"><span class="tech-icon-dot dot-py"></span> Python</div>
+          <div class="tech-item"><span class="tech-icon-dot dot-node"></span> Node.js</div>
+          <div class="tech-item"><span class="tech-icon-dot dot-mongo"></span> MongoDB</div>
+          <div class="tech-item"><span class="tech-icon-dot dot-js"></span> Express.js</div>
+          <div class="tech-item"><span class="tech-icon-dot dot-docker"></span> Supabase</div>
+          <div class="tech-item"><span class="tech-icon-dot dot-docker"></span> Docker</div>
+          <div class="tech-item"><span class="tech-icon-dot dot-java"></span> Java</div>
+          <div class="tech-item"><span class="tech-icon-dot dot-js"></span> Tailwind CSS</div>
+        </div>
+      </article>
+
+      <!-- EDUCATION & CERTIFICATIONS CARD (Col 4) -->
+      <article class="bento-card col-4">
+        <div class="card-header-badge">
+          <span class="badge badge-ai"><i class="fa-solid fa-certificate"></i> Education & Credentials</span>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-title">Sri Sairam Engineering College</div>
+          <div class="timeline-meta">B.E. CSE (2023 – 2027) • CGPA: 7.56</div>
+          <div class="timeline-desc">Chennai, Tamil Nadu</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot" style="background: var(--accent-purple);"></div>
+          <div class="timeline-title">Certifications & Honors</div>
+          <div class="timeline-meta">NPTEL • Cisco • MongoDB</div>
+          <div class="timeline-desc">MongoDB Atlas & Vector Search, Cisco Networking Essentials, Python for Data Science.</div>
+        </div>
+      </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 Madhesh N • Designed & Crafted for High Impact</p>
+      <p style="margin-top: 0.4rem; color: var(--text-secondary);">
+        <i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu • 
+        <a href="mailto:madheshdeepak71@gmail.com" style="color: var(--accent-cyan); text-decoration: none;">madheshdeepak71@gmail.com</a>
+      </p>
+    </footer>
+
+  </div>
+
+  <!-- Detail Modal Popup -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-content">
+      <button class="close-modal" id="closeModalBtn"><i class="fa-solid fa-xmark"></i></button>
+      <h2 id="modalTitle" style="font-size: 1.5rem; margin-bottom: 0.5rem;">Project Details</h2>
+      <p id="modalStack" style="font-family: var(--font-mono); color: var(--accent-cyan); font-size: 0.85rem; margin-bottom: 1rem;"></p>
+      <p id="modalDesc" style="color: var(--text-secondary); margin-bottom: 1.5rem;"></p>
+      
+      <h4 style="font-weight: 700; margin-bottom: 0.5rem; color: var(--text-primary);">Key System Architecture & Features:</h4>
+      <ul id="modalFeatures" class="project-bullets" style="margin-bottom: 1.5rem;"></ul>
+
+      <div style="display: flex; gap: 1rem;">
+        <a id="modalGithub" href="#" target="_blank" class="btn btn-primary">
+          <i class="fa-brands fa-github"></i> View GitHub Code
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast" id="toastNotification">
+    Notification message
+  </div>
+
+  <!-- Script -->
+  <script src="app.js"></script>
+</body>
+</html>
