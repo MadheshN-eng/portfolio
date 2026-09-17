@@ -3,258 +3,184 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Madhesh N — Full Stack & AI Developer</title>
-  <meta name="description" content="Personal portfolio of Madhesh N, Full Stack Developer building web applications with MERN Stack, FastAPI, Python, and MongoDB.">
-  
-  <!-- Fonts -->
+  <title>Madhesh N | Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Madhesh N - Full Stack Developer">
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- Custom Styles (Cache busted) -->
-  <link rel="stylesheet" href="style.css?v=2.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <div class="main-wrapper">
-
-    <!-- Header Section -->
-    <header class="profile-header">
-      <div class="profile-title">
-        <h1>Madhesh N</h1>
-        <p>Full Stack & AI Developer</p>
-        
-        <div class="status-indicator">
-          <span class="dot"></span>
-          <span>Open to Software Engineering Opportunities</span>
-        </div>
-      </div>
-
-      <div class="avatar-container" title="Madhesh N">
-        MN
-      </div>
-    </header>
-
-    <!-- Social & Action Links -->
-    <div class="social-links">
-      <button class="link-btn primary" onclick="copyEmail()">
-        <i class="fa-regular fa-envelope"></i> Copy Email
-      </button>
-
-      <a href="https://github.com/MadheshN-eng" target="_blank" class="link-btn">
-        <i class="fa-brands fa-github"></i> GitHub
-      </a>
-
-      <a href="https://linkedin.com/in/Madhesh-N" target="_blank" class="link-btn">
-        <i class="fa-brands fa-linkedin"></i> LinkedIn
-      </a>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">Madhesh N.</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <!-- About Me Section -->
-    <section class="section">
-      <h2 class="section-title">About Me</h2>
-      <div class="bio-text">
-        <p>
-          I am a Computer Science student at <span class="highlight">Sri Sairam Engineering College</span> in Chennai with hands-on experience building web applications across the full stack.
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <p class="greeting">Hello, I'm</p>
+        <h1 class="name">Madhesh N</h1>
+        <h2 class="title">Full Stack & AI Developer</h2>
+        <p class="bio">
+          I am a results-driven developer specializing in the MERN Stack, FastAPI, and AI-powered web applications. 
+          I build scalable web solutions and user-centric applications, combining strong software engineering principles 
+          with modern technologies.
         </p>
-        <p>
-          I work primarily with <span class="highlight">React, Node.js, Express, FastAPI, Python, and MongoDB</span>. I enjoy turning complex problem statements into functional, well-structured software—ranging from infrastructure monitoring dashboards to AI recruitment tools.
-        </p>
-      </div>
-    </section>
-
-    <!-- Work Experience Section -->
-    <section class="section">
-      <h2 class="section-title">Experience</h2>
-      <div class="card-list">
-        
-        <div class="humane-card">
-          <div class="card-top">
-            <div>
-              <div class="card-title">Full Stack Developer Intern</div>
-              <div class="card-subtitle">MAESTROMINDS</div>
-            </div>
-            <div class="card-date">Jun 2025 – Jul 2025</div>
-          </div>
-          <div class="card-body">
-            <ul class="card-bullets">
-              <li>Developed production web applications using React.js, Node.js, Express.js, and MongoDB.</li>
-              <li>Handled REST API integrations, backend endpoint debugging, testing, and database optimization.</li>
-              <li>Collaborated with senior engineers to implement new user features and resolve software bugs.</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section">
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="card-list">
-
-        <!-- Distop AI -->
-        <div class="humane-card">
-          <div class="card-top">
-            <div>
-              <div class="card-title">Distop AI — Infrastructure Monitoring Platform</div>
-              <div class="card-subtitle">AI & Infrastructure Telemetry</div>
-            </div>
-          </div>
-          <div class="card-body">
-            <p style="margin-bottom: 0.5rem;">
-              An AI-powered infrastructure monitoring suite designed to visualize microservice health, track system metrics, and perform root-cause analysis.
-            </p>
-            <ul class="card-bullets">
-              <li>Implemented machine learning models for anomaly detection and NLP-driven incident analysis.</li>
-              <li>Built responsive real-time analytics dashboards for tracking CPU, memory, and network health.</li>
-            </ul>
-            <div class="tag-row">
-              <span class="tag">React</span>
-              <span class="tag">FastAPI</span>
-              <span class="tag">Python</span>
-              <span class="tag">MongoDB</span>
-              <span class="tag">Docker</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- AI HR Screening -->
-        <div class="humane-card">
-          <div class="card-top">
-            <div>
-              <div class="card-title">AI-Powered HR Screening Web App</div>
-              <div class="card-subtitle">Recruitment Automation</div>
-            </div>
-          </div>
-          <div class="card-body">
-            <p style="margin-bottom: 0.5rem;">
-              An end-to-end web platform built to automate candidate resume evaluation and coding assessments.
-            </p>
-            <ul class="card-bullets">
-              <li>Integrated Piston API for isolated multi-language code execution and evaluation.</li>
-              <li>Implemented role-based JWT authentication for recruiters and candidates.</li>
-            </ul>
-            <div class="tag-row">
-              <span class="tag">React</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Piston API</span>
-              <span class="tag">MongoDB</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Crackers Craze -->
-        <div class="humane-card">
-          <div class="card-top">
-            <div>
-              <div class="card-title">Crackers Craze</div>
-              <div class="card-subtitle">E-Commerce & Vendor Management</div>
-            </div>
-          </div>
-          <div class="card-body">
-            <p style="margin-bottom: 0.5rem;">
-              A bulk product price comparison engine and online ordering web application.
-            </p>
-            <ul class="card-bullets">
-              <li>Built OTP-based user registration and streamlined online checkout workflows.</li>
-              <li>Integrated vendor-wise product inventory management and real-time database updates.</li>
-            </ul>
-            <div class="tag-row">
-              <span class="tag">React</span>
-              <span class="tag">Tailwind CSS</span>
-              <span class="tag">Supabase</span>
-              <span class="tag">Express.js</span>
-              <span class="tag">Node.js</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Technical Skills Section -->
-    <section class="section">
-      <h2 class="section-title">Skills & Technologies</h2>
-
-      <div class="skills-group">
-        <div class="skills-label">Languages</div>
-        <div class="skills-pills">
-          <span class="skill-pill">Java</span>
-          <span class="skill-pill">Python</span>
-          <span class="skill-pill">C</span>
-          <span class="skill-pill">JavaScript</span>
-          <span class="skill-pill">TypeScript</span>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="skills-group">
-        <div class="skills-label">Frontend & Backend</div>
-        <div class="skills-pills">
-          <span class="skill-pill">React.js</span>
-          <span class="skill-pill">Node.js</span>
-          <span class="skill-pill">Express.js</span>
-          <span class="skill-pill">FastAPI</span>
-          <span class="skill-pill">REST APIs</span>
-          <span class="skill-pill">Tailwind CSS</span>
-          <span class="skill-pill">HTML5 / CSS3</span>
+  <!-- Skills Section -->
+  <section class="skills-section bg-light">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <p>Java, C, Python, TypeScript, JavaScript</p>
+        </div>
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <p>React.js, HTML5, CSS3, Tailwind CSS</p>
+        </div>
+        <div class="skill-category">
+          <h3>Backend & AI</h3>
+          <p>Node.js, Express.js, FastAPI, REST APIs</p>
+        </div>
+        <div class="skill-category">
+          <h3>Databases & Tools</h3>
+          <p>MongoDB, Supabase, Git, Docker, Postman</p>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="skills-group">
-        <div class="skills-label">Databases & Developer Tools</div>
-        <div class="skills-pills">
-          <span class="skill-pill">MongoDB</span>
-          <span class="skill-pill">Supabase</span>
-          <span class="skill-pill">Docker</span>
-          <span class="skill-pill">Git & GitHub</span>
-          <span class="skill-pill">Postman</span>
-          <span class="skill-pill">VS Code</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education & Achievements Section -->
-    <section class="section">
-      <h2 class="section-title">Education & Achievements</h2>
+  <!-- Experience & Education -->
+  <section class="experience-section" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience & Education</h2>
       
-      <div class="two-col-grid">
-        <div class="mini-card">
-          <div class="mini-card-title">Sri Sairam Engineering College</div>
-          <div class="mini-card-sub">B.E. Computer Science & Engineering (2023–2027)</div>
-          <div class="mini-card-desc">CGPA: 7.56 • Chennai, Tamil Nadu</div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Full Stack Developer Intern</h3>
+            <p class="company">MAESTROMINDS | Jun 2025 – Jul 2025</p>
+            <ul>
+              <li>Assisted in developing MERN Stack web applications using React.js, Node.js, Express.js, and MongoDB.</li>
+              <li>Worked on API integration, debugging, testing, and database management.</li>
+              <li>Collaborated with senior developers to implement new features.</li>
+            </ul>
+          </div>
         </div>
-
-        <div class="mini-card">
-          <div class="mini-card-title">Problem Solving & Hackathons</div>
-          <div class="mini-card-sub">Coding Highlights</div>
-          <div class="mini-card-desc">
-            • 4000+ Skillrack points achieved<br>
-            • Hackgenix 2025 Hackathon Participant<br>
-            • Cisco Networking Essentials Certified
+        
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>B.E. Computer Science and Engineering</h3>
+            <p class="company">Sri Sairam Engineering College | 2023 – 2027</p>
+            <p>CGPA: 7.56</p>
+            <p><strong>Achievements:</strong> 4000+ Skillrack points, Hackgenix Hackathon 2025 Participant, CISCO Networking Essentials Certification.</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-      <div>Madhesh N • Chennai, India</div>
-      <div>
-        <a href="mailto:madheshdeepak71@gmail.com">madheshdeepak71@gmail.com</a>
+  <!-- Projects Section -->
+  <section class="projects-section bg-light" id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Distop AI</h3>
+            <p class="subtitle">AI-Powered Infrastructure Monitoring Platform</p>
+            <p class="desc">
+              Developed a monitoring platform using React, FastAPI, and MongoDB. Implemented ML-based anomaly detection 
+              and NLP-driven root cause analysis with responsive dashboards for system insights.
+            </p>
+            <div class="tech-stack">
+              <span>React</span><span>FastAPI</span><span>Python</span><span>Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-content">
+            <h3>AI-Powered HR Screening</h3>
+            <p class="subtitle">Recruitment Web Application</p>
+            <p class="desc">
+              Built an AI-driven recruitment platform for resume screening and coding assessments. Integrated Piston API 
+              for secure multi-language code execution and role-based authentication.
+            </p>
+            <div class="tech-stack">
+              <span>MERN Stack</span><span>TypeScript</span><span>AI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Crackers Craze</h3>
+            <p class="subtitle">Bulk E-Commerce Platform</p>
+            <p class="desc">
+              Developed a bulk-cracker comparison platform with OTP-based user registration and online ordering workflows. 
+              Integrated vendor-wise product management features.
+            </p>
+            <div class="tech-stack">
+              <span>React</span><span>Supabase</span><span>Node.js</span>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </footer>
+    </div>
+  </section>
 
-  </div>
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-text">I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+      
+      <div class="contact-links">
+        <a href="mailto:madheshdeepak71@gmail.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Email Me</a>
+        <a href="https://github.com/MadheshN-eng" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://linkedin.com/in/Madhesh-N" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+  </section>
 
-  <!-- Toast Notification -->
-  <div class="toast" id="toastNotification">Email copied to clipboard!</div>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Madhesh N. All rights reserved.</p>
+    </div>
+  </footer>
 
-  <!-- Script (Cache busted) -->
-  <script src="app.js?v=2.0"></script>
+  <script src="app.js"></script>
 </body>
 </html>

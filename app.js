@@ -1,24 +1,23 @@
 /**
- * MADHESH N - HUMANE PORTFOLIO LOGIC
+ * MADHESH N - PROFESSIONAL PORTFOLIO SCRIPTS
  */
 
-function copyEmail() {
-  const email = 'madheshdeepak71@gmail.com';
-  navigator.clipboard.writeText(email).then(() => {
-    showToast('📧 Copied: madheshdeepak71@gmail.com');
-  }).catch(() => {
-    showToast('📧 Email: madheshdeepak71@gmail.com');
-  });
-}
-
-function showToast(message) {
-  const toast = document.getElementById('toastNotification');
-  if (!toast) return;
-
-  toast.innerText = message;
-  toast.classList.add('show');
-
-  setTimeout(() => {
-    toast.classList.remove('show');
-  }, 2500);
-}
+document.addEventListener('DOMContentLoaded', () => {
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+});
