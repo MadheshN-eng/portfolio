@@ -3,309 +3,256 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Madhesh N | Full Stack & AI Developer Portfolio</title>
-  <meta name="description" content="Portfolio of Madhesh N - Full Stack & AI Developer proficient in MERN Stack, FastAPI, Python, MongoDB, Supabase, and AI Web Applications.">
-  <meta name="keywords" content="Madhesh N, Full Stack Developer, MERN Stack, FastAPI, AI Developer, Chennai, Software Engineer Portfolio">
+  <title>Madhesh N — Full Stack & AI Developer</title>
+  <meta name="description" content="Personal portfolio of Madhesh N, Full Stack Developer building web applications with MERN Stack, FastAPI, Python, and MongoDB.">
   
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   
-  <!-- FontAwesome Icons -->
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
-  <!-- Custom Stylesheet -->
+  <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Ambient Professional Background -->
-  <div class="bg-glow-container">
-    <div class="glow-orb glow-orb-1"></div>
-    <div class="glow-orb glow-orb-2"></div>
-    <div class="glow-orb glow-orb-3"></div>
-  </div>
+  <div class="main-wrapper">
 
-  <div class="container">
-    
-    <!-- Top Navigation Header -->
-    <header class="top-nav">
-      <div class="nav-brand">
-        <div class="brand-avatar">MN</div>
-        <div class="brand-info">
-          <h1>MADHESH N</h1>
-          <p>Full Stack & AI Developer • Chennai, TN</p>
+    <!-- Header Section -->
+    <header class="profile-header">
+      <div class="profile-title">
+        <h1>Madhesh N</h1>
+        <p>Full Stack & AI Developer</p>
+        
+        <div class="status-indicator">
+          <span class="dot"></span>
+          <span>Open to Software Engineering Opportunities</span>
         </div>
       </div>
-      
-      <div class="status-badge">
-        <span class="pulse-dot"></span>
-        <span>Available for Software Engineering Roles</span>
-      </div>
 
-      <div class="nav-actions">
-        <button class="btn btn-secondary" onclick="copyEmail()">
-          <i class="fa-regular fa-envelope"></i>
-          <span>Email Me</span>
-        </button>
-
-        <a href="https://github.com/MadheshN-eng" target="_blank" class="icon-btn" title="GitHub Profile">
-          <i class="fa-brands fa-github"></i>
-        </a>
-
-        <a href="https://linkedin.com/in/Madhesh-N" target="_blank" class="icon-btn" title="LinkedIn Profile">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
+      <div class="avatar-container" title="Madhesh N">
+        MN
       </div>
     </header>
 
-    <!-- Tech Stack Filter Bar -->
-    <div class="filter-bar">
-      <button class="filter-chip active" data-filter="all"><i class="fa-solid fa-list-check"></i> View All</button>
-      <button class="filter-chip" data-filter="ai"><i class="fa-solid fa-robot"></i> AI & ML Infrastructure</button>
-      <button class="filter-chip" data-filter="mern"><i class="fa-solid fa-code"></i> MERN Stack</button>
-      <button class="filter-chip" data-filter="fastapi"><i class="fa-solid fa-server"></i> FastAPI & Python</button>
-      <button class="filter-chip" data-filter="database"><i class="fa-solid fa-database"></i> Supabase & MongoDB</button>
+    <!-- Social & Action Links -->
+    <div class="social-links">
+      <button class="link-btn primary" onclick="copyEmail()">
+        <i class="fa-regular fa-envelope"></i> Copy Email
+      </button>
+
+      <a href="https://github.com/MadheshN-eng" target="_blank" class="link-btn">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+
+      <a href="https://linkedin.com/in/Madhesh-N" target="_blank" class="link-btn">
+        <i class="fa-brands fa-linkedin"></i> LinkedIn
+      </a>
     </div>
 
-    <!-- Bento Grid Section -->
-    <main class="bento-grid">
-      
-      <!-- HERO BENTO TILE (Col 8) -->
-      <article class="bento-card hero-card col-8">
-        <div>
-          <div class="hero-tag">
-            <i class="fa-solid fa-layer-group"></i> Full Stack & AI Engineering
-          </div>
-          <h2 class="hero-title">
-            Building <span class="gradient-text">Scalable Web Applications & AI Infrastructure</span>
-          </h2>
-          <p class="hero-description">
-            Computer Science graduate proficient in MERN Stack, FastAPI, Python, and cloud services. Experienced in engineering real-time monitoring platforms, AI recruitment tools, and enterprise full-stack solutions.
-          </p>
-        </div>
-        
-        <div class="hero-highlights">
-          <div class="highlight-item">
-            <div class="highlight-icon"><i class="fa-solid fa-chart-line"></i></div>
-            <span>4000+ Skillrack Coding Points</span>
-          </div>
-          <div class="highlight-item">
-            <div class="highlight-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-            <span>B.E. CSE • CGPA 7.56</span>
-          </div>
-          <div class="highlight-item">
-            <div class="highlight-icon"><i class="fa-solid fa-trophy"></i></div>
-            <span>Hackgenix 2025 Participant</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- STATS & PROBLEM SOLVING CARD (Col 4) -->
-      <article class="bento-card stat-box col-4">
-        <div class="card-header-badge" style="width: 100%;">
-          <span class="badge badge-ai"><i class="fa-solid fa-award"></i> Problem Solving</span>
-          <i class="fa-solid fa-code" style="color: var(--accent-blue);"></i>
-        </div>
-        <div class="stat-number" data-target="4000">4,000+</div>
-        <div class="stat-label">Skillrack Points Achieved</div>
-        <p class="stat-subtext">Demonstrated analytical problem-solving proficiency across data structures, algorithms, Java, C, and Python challenges.</p>
-      </article>
-
-      <!-- FEATURED PROJECT 1: DISTOP AI (Col 7) -->
-      <article class="bento-card project-card col-7" data-tech="ai fastapi database">
-        <div class="card-header-badge">
-          <span class="badge badge-ai"><i class="fa-solid fa-microchip"></i> AI Infrastructure</span>
-          <button class="btn btn-secondary" onclick="openProjectModal('distop')" style="padding: 0.3rem 0.7rem; font-size: 0.75rem;">
-            Details <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </button>
-        </div>
-        
-        <h3 class="project-title">Distop AI Platform</h3>
-        <div class="project-subtitle">React • FastAPI • Python • MongoDB • Docker</div>
-        
-        <ul class="project-bullets">
-          <li>Architected an AI-driven infrastructure monitoring platform visualizing real-time metrics.</li>
-          <li>Integrated machine learning anomaly detection and NLP-driven root-cause analysis.</li>
-          <li>Engineered responsive dashboards for tracking infrastructure health and system analytics.</li>
-        </ul>
-
-        <div class="tech-tags">
-          <span class="tech-tag">React.js</span>
-          <span class="tech-tag">FastAPI</span>
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">MongoDB</span>
-          <span class="tech-tag">Docker</span>
-          <span class="tech-tag">NLP</span>
-        </div>
-      </article>
-
-      <!-- EXPERIENCE CARD: MAESTROMINDS INTERNSHIP (Col 5) -->
-      <article class="bento-card col-5">
-        <div class="card-header-badge">
-          <span class="badge badge-fullstack"><i class="fa-solid fa-briefcase"></i> Software Internship</span>
-          <span style="font-size: 0.75rem; color: var(--text-muted);">Jun 2025 – Jul 2025</span>
-        </div>
-        
-        <h3 class="project-title">Full Stack Developer Intern</h3>
-        <div class="project-subtitle">MAESTROMINDS</div>
-        
-        <ul class="project-bullets" style="margin-top: 0.75rem;">
-          <li>Assisted in developing production MERN Stack applications using React, Node, Express, and MongoDB.</li>
-          <li>Implemented REST API integrations, debugging, unit testing, and database management.</li>
-          <li>Collaborated with senior engineers to build user-centric features and resolve platform issues.</li>
-        </ul>
-      </article>
-
-      <!-- FEATURED PROJECT 2: AI HR SCREENING WITH CODE SANDBOX (Col 7) -->
-      <article class="bento-card project-card col-7" data-tech="ai mern">
-        <div class="card-header-badge">
-          <span class="badge badge-ai"><i class="fa-solid fa-user-check"></i> Recruitment Tech</span>
-          <button class="btn btn-secondary" onclick="openProjectModal('hrscreening')" style="padding: 0.3rem 0.7rem; font-size: 0.75rem;">
-            Details <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </button>
-        </div>
-        
-        <h3 class="project-title">AI-Powered HR Screening App</h3>
-        <div class="project-subtitle">MERN Stack • TypeScript • AI • Piston API</div>
-        
-        <p class="stat-subtext" style="margin-bottom: 0.75rem;">
-          Automated resume screening and candidate evaluation platform featuring secure multi-language code assessment.
+    <!-- About Me Section -->
+    <section class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="bio-text">
+        <p>
+          I am a Computer Science student at <span class="highlight">Sri Sairam Engineering College</span> in Chennai with hands-on experience building web applications across the full stack.
         </p>
+        <p>
+          I work primarily with <span class="highlight">React, Node.js, Express, FastAPI, Python, and MongoDB</span>. I enjoy turning complex problem statements into functional, well-structured software—ranging from infrastructure monitoring dashboards to AI recruitment tools.
+        </p>
+      </div>
+    </section>
 
-        <!-- Interactive Sandbox Widget inside Card -->
-        <div class="code-playground">
-          <div class="playground-header">
-            <span><i class="fa-solid fa-terminal"></i> Piston API Code Assessment Simulator</span>
-            <div class="playground-controls">
-              <select id="langSelect" style="background: #1e293b; color: #fff; border: 1px solid var(--border-color); font-size: 0.7rem; padding: 0.15rem 0.4rem; border-radius: 4px;">
-                <option value="python">Python 3</option>
-                <option value="javascript">TypeScript/Node</option>
-              </select>
-              <button class="run-btn" id="runCodeBtn">
-                <i class="fa-solid fa-play"></i> Run Execution
-              </button>
+    <!-- Work Experience Section -->
+    <section class="section">
+      <h2 class="section-title">Experience</h2>
+      <div class="card-list">
+        
+        <div class="humane-card">
+          <div class="card-top">
+            <div>
+              <div class="card-title">Full Stack Developer Intern</div>
+              <div class="card-subtitle">MAESTROMINDS</div>
+            </div>
+            <div class="card-date">Jun 2025 – Jul 2025</div>
+          </div>
+          <div class="card-body">
+            <ul class="card-bullets">
+              <li>Developed production web applications using React.js, Node.js, Express.js, and MongoDB.</li>
+              <li>Handled REST API integrations, backend endpoint debugging, testing, and database optimization.</li>
+              <li>Collaborated with senior engineers to implement new user features and resolve software bugs.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="card-list">
+
+        <!-- Distop AI -->
+        <div class="humane-card">
+          <div class="card-top">
+            <div>
+              <div class="card-title">Distop AI — Infrastructure Monitoring Platform</div>
+              <div class="card-subtitle">AI & Infrastructure Telemetry</div>
             </div>
           </div>
-          <div class="code-output" id="codeOutput">
-            Click "Run Execution" to simulate candidate code evaluation...
+          <div class="card-body">
+            <p style="margin-bottom: 0.5rem;">
+              An AI-powered infrastructure monitoring suite designed to visualize microservice health, track system metrics, and perform root-cause analysis.
+            </p>
+            <ul class="card-bullets">
+              <li>Implemented machine learning models for anomaly detection and NLP-driven incident analysis.</li>
+              <li>Built responsive real-time analytics dashboards for tracking CPU, memory, and network health.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">React</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Python</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Docker</span>
+            </div>
           </div>
         </div>
 
-        <div class="tech-tags">
-          <span class="tech-tag">React</span>
-          <span class="tech-tag">Node.js</span>
-          <span class="tech-tag">TypeScript</span>
-          <span class="tech-tag">Piston API</span>
-          <span class="tech-tag">JWT Auth</span>
-        </div>
-      </article>
-
-      <!-- PROJECT 3: CRACKERS CRAZE (Col 5) -->
-      <article class="bento-card project-card col-5" data-tech="mern database">
-        <div class="card-header-badge">
-          <span class="badge badge-ecom"><i class="fa-solid fa-cart-shopping"></i> E-Commerce Platform</span>
-          <button class="btn btn-secondary" onclick="openProjectModal('crackerscraze')" style="padding: 0.3rem 0.7rem; font-size: 0.75rem;">
-            Details <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </button>
-        </div>
-        
-        <h3 class="project-title">Crackers Craze</h3>
-        <div class="project-subtitle">React • Supabase • Express.js • Node.js</div>
-        
-        <ul class="project-bullets">
-          <li>Bulk-cracker product comparison engine with streamlined online ordering.</li>
-          <li>OTP-based user registration and vendor product management interface.</li>
-        </ul>
-
-        <div class="tech-tags" style="margin-top: auto;">
-          <span class="tech-tag">React</span>
-          <span class="tech-tag">Tailwind CSS</span>
-          <span class="tech-tag">Supabase</span>
-          <span class="tech-tag">Express.js</span>
-        </div>
-      </article>
-
-      <!-- SKILLS MATRIX TILE (Col 8) -->
-      <article class="bento-card col-8">
-        <div class="card-header-badge">
-          <span class="badge badge-fullstack"><i class="fa-solid fa-cubes"></i> Core Competencies</span>
-        </div>
-        
-        <h3 class="project-title" style="font-size: 1.25rem;">Technologies & Frameworks</h3>
-        
-        <div class="tech-grid">
-          <div class="tech-item"><span class="tech-icon-dot dot-react"></span> React.js</div>
-          <div class="tech-item"><span class="tech-icon-dot dot-fastapi"></span> FastAPI</div>
-          <div class="tech-item"><span class="tech-icon-dot dot-py"></span> Python</div>
-          <div class="tech-item"><span class="tech-icon-dot dot-node"></span> Node.js</div>
-          <div class="tech-item"><span class="tech-icon-dot dot-mongo"></span> MongoDB</div>
-          <div class="tech-item"><span class="tech-icon-dot dot-js"></span> Express.js</div>
-          <div class="tech-item"><span class="tech-icon-dot dot-docker"></span> Supabase</div>
-          <div class="tech-item"><span class="tech-icon-dot dot-docker"></span> Docker</div>
-          <div class="tech-item"><span class="tech-icon-dot dot-java"></span> Java</div>
-          <div class="tech-item"><span class="tech-icon-dot dot-react"></span> Tailwind CSS</div>
-        </div>
-      </article>
-
-      <!-- EDUCATION & CERTIFICATIONS CARD (Col 4) -->
-      <article class="bento-card col-4">
-        <div class="card-header-badge">
-          <span class="badge badge-ai"><i class="fa-solid fa-graduation-cap"></i> Academic Credentials</span>
+        <!-- AI HR Screening -->
+        <div class="humane-card">
+          <div class="card-top">
+            <div>
+              <div class="card-title">AI-Powered HR Screening Web App</div>
+              <div class="card-subtitle">Recruitment Automation</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p style="margin-bottom: 0.5rem;">
+              An end-to-end web platform built to automate candidate resume evaluation and coding assessments.
+            </p>
+            <ul class="card-bullets">
+              <li>Integrated Piston API for isolated multi-language code execution and evaluation.</li>
+              <li>Implemented role-based JWT authentication for recruiters and candidates.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Piston API</span>
+              <span class="tag">MongoDB</span>
+            </div>
+          </div>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-title">Sri Sairam Engineering College</div>
-          <div class="timeline-meta">B.E. CSE (2023 – 2027) • CGPA: 7.56</div>
-          <div class="timeline-desc">Chennai, Tamil Nadu</div>
+        <!-- Crackers Craze -->
+        <div class="humane-card">
+          <div class="card-top">
+            <div>
+              <div class="card-title">Crackers Craze</div>
+              <div class="card-subtitle">E-Commerce & Vendor Management</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p style="margin-bottom: 0.5rem;">
+              A bulk product price comparison engine and online ordering web application.
+            </p>
+            <ul class="card-bullets">
+              <li>Built OTP-based user registration and streamlined online checkout workflows.</li>
+              <li>Integrated vendor-wise product inventory management and real-time database updates.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">React</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">Express.js</span>
+              <span class="tag">Node.js</span>
+            </div>
+          </div>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-dot" style="background: var(--accent-indigo);"></div>
-          <div class="timeline-title">Certifications & Honors</div>
-          <div class="timeline-meta">MongoDB • Cisco • NPTEL</div>
-          <div class="timeline-desc">MongoDB Atlas & Vector Search, Cisco Networking Essentials, Python for Data Science.</div>
-        </div>
-      </article>
+      </div>
+    </section>
 
-    </main>
+    <!-- Technical Skills Section -->
+    <section class="section">
+      <h2 class="section-title">Skills & Technologies</h2>
+
+      <div class="skills-group">
+        <div class="skills-label">Languages</div>
+        <div class="skills-pills">
+          <span class="skill-pill">Java</span>
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">C</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">TypeScript</span>
+        </div>
+      </div>
+
+      <div class="skills-group">
+        <div class="skills-label">Frontend & Backend</div>
+        <div class="skills-pills">
+          <span class="skill-pill">React.js</span>
+          <span class="skill-pill">Node.js</span>
+          <span class="skill-pill">Express.js</span>
+          <span class="skill-pill">FastAPI</span>
+          <span class="skill-pill">REST APIs</span>
+          <span class="skill-pill">Tailwind CSS</span>
+          <span class="skill-pill">HTML5 / CSS3</span>
+        </div>
+      </div>
+
+      <div class="skills-group">
+        <div class="skills-label">Databases & Developer Tools</div>
+        <div class="skills-pills">
+          <span class="skill-pill">MongoDB</span>
+          <span class="skill-pill">Supabase</span>
+          <span class="skill-pill">Docker</span>
+          <span class="skill-pill">Git & GitHub</span>
+          <span class="skill-pill">Postman</span>
+          <span class="skill-pill">VS Code</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Achievements Section -->
+    <section class="section">
+      <h2 class="section-title">Education & Achievements</h2>
+      
+      <div class="two-col-grid">
+        <div class="mini-card">
+          <div class="mini-card-title">Sri Sairam Engineering College</div>
+          <div class="mini-card-sub">B.E. Computer Science & Engineering (2023–2027)</div>
+          <div class="mini-card-desc">CGPA: 7.56 • Chennai, Tamil Nadu</div>
+        </div>
+
+        <div class="mini-card">
+          <div class="mini-card-title">Problem Solving & Hackathons</div>
+          <div class="mini-card-sub">Coding Highlights</div>
+          <div class="mini-card-desc">
+            • 4000+ Skillrack points achieved<br>
+            • Hackgenix 2025 Hackathon Participant<br>
+            • Cisco Networking Essentials Certified
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer>
-      <p>© 2026 Madhesh N • Full Stack & AI Developer</p>
-      <p style="margin-top: 0.4rem; color: var(--text-secondary);">
-        <i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu • 
-        <a href="mailto:madheshdeepak71@gmail.com" style="color: var(--accent-blue); text-decoration: none;">madheshdeepak71@gmail.com</a>
-      </p>
+      <div>Madhesh N • Chennai, India</div>
+      <div>
+        <a href="mailto:madheshdeepak71@gmail.com">madheshdeepak71@gmail.com</a>
+      </div>
     </footer>
 
   </div>
 
-  <!-- Detail Modal Popup -->
-  <div class="modal-overlay" id="projectModal">
-    <div class="modal-content">
-      <button class="close-modal" id="closeModalBtn"><i class="fa-solid fa-xmark"></i></button>
-      <h2 id="modalTitle" style="font-size: 1.5rem; margin-bottom: 0.5rem;">Project Details</h2>
-      <p id="modalStack" style="font-family: var(--font-mono); color: var(--accent-blue); font-size: 0.85rem; margin-bottom: 1rem;"></p>
-      <p id="modalDesc" style="color: var(--text-secondary); margin-bottom: 1.5rem;"></p>
-      
-      <h4 style="font-weight: 700; margin-bottom: 0.5rem; color: var(--text-primary);">Key System Architecture & Features:</h4>
-      <ul id="modalFeatures" class="project-bullets" style="margin-bottom: 1.5rem;"></ul>
-
-      <div style="display: flex; gap: 1rem;">
-        <a id="modalGithub" href="#" target="_blank" class="btn btn-primary">
-          <i class="fa-brands fa-github"></i> View GitHub Repository
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Toast Notification Container -->
-  <div class="toast" id="toastNotification">
-    Notification message
-  </div>
+  <!-- Toast Notification -->
+  <div class="toast" id="toastNotification">Email copied to clipboard!</div>
 
   <!-- Script -->
   <script src="app.js"></script>
