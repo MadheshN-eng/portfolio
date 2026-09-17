@@ -1,5 +1,6 @@
 /**
  * MADHESH N - BENTO GRID PORTFOLIO INTERACTIVE LOGIC
+ * Professional Corporate Theme
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -18,7 +19,6 @@ function initProjectFiltering() {
 
   filterChips.forEach(chip => {
     chip.addEventListener('click', () => {
-      // Remove active class from all chips
       filterChips.forEach(c => c.classList.remove('active'));
       chip.classList.add('active');
 
@@ -33,7 +33,7 @@ function initProjectFiltering() {
           card.style.transform = 'translateY(0)';
         } else {
           card.style.opacity = '0';
-          card.style.transform = 'scale(0.95)';
+          card.style.transform = 'scale(0.97)';
           setTimeout(() => {
             if (!card.getAttribute('data-tech').includes(filter) && filter !== 'all') {
               card.style.display = 'none';
@@ -46,38 +46,37 @@ function initProjectFiltering() {
 }
 
 /* ==========================================================================
-   2. Interactive Piston API Live Code Playground Simulator
+   2. Piston API Code Playground Simulator
    ========================================================================== */
 function initCodePlayground() {
   const runBtn = document.getElementById('runCodeBtn');
   const codeOutput = document.getElementById('codeOutput');
-  const codeEditor = document.getElementById('codeEditor');
 
   if (!runBtn || !codeOutput) return;
 
   const mockExecution = {
-    python: `🚀 [Piston API Engine] Executing Python 3.10...
+    python: `[Piston Engine] Executing Python 3.10...
 ------------------------------------------------
-Scanning Resume: candidate_madhesh.pdf...
-Matching Skills: ['React.js', 'FastAPI', 'MongoDB', 'AI/Vector Search']
-Match Score: 96.5% - QUALIFIED FOR TECHNICAL INTERVIEW!
-Execution Time: 42ms | Memory: 12.4MB`,
+Parsing Candidate Profile: Candidate_Madhesh.pdf
+Matched Skill Vectors: ['React.js', 'FastAPI', 'MongoDB', 'Vector Search']
+Match Rating: 96.5% - Recommended for Engineering Interview.
+Execution Latency: 38ms | Memory: 11.8MB`,
     
-    javascript: `🚀 [Piston API Engine] Executing TypeScript/Node.js...
+    javascript: `[Piston Engine] Executing Node.js Environment...
 ------------------------------------------------
-Role Auth Check: JWT Verified (Role: Senior Technical Lead)
-Assessment Test Suite: 5/5 Unit Tests Passed
-Status: Code Execution Sandbox Ready.`
+Auth Token Verification: Valid (Role: Senior Engineering Lead)
+Test Suite Summary: 5/5 Automated Code Tests Passed.
+Status: Execution Sandbox Verified.`
   };
 
   runBtn.addEventListener('click', () => {
-    codeOutput.innerHTML = `<span style="color: var(--accent-amber);">⚡ Executing code via Piston API container...</span>`;
+    codeOutput.innerHTML = `<span style="color: var(--accent-blue);"><i class="fa-solid fa-spinner fa-spin"></i> Executing code in isolated container...</span>`;
     
     setTimeout(() => {
       const selectedLang = document.getElementById('langSelect').value;
       codeOutput.innerHTML = mockExecution[selectedLang] || mockExecution.python;
-      showToast('Piston API Code Sandbox executed cleanly!');
-    }, 600);
+      showToast('Piston Code Assessment Executed Successfully');
+    }, 500);
   });
 }
 
@@ -86,43 +85,40 @@ Status: Code Execution Sandbox Ready.`
    ========================================================================== */
 const projectDetailsData = {
   distop: {
-    title: "Distop AI – AI-Powered Infrastructure Monitoring Platform",
+    title: "Distop AI – Infrastructure Monitoring Platform",
     stack: "React, FastAPI, Python, MongoDB, Docker",
-    description: `Distop AI is a high-performance infrastructure monitoring suite built to deliver real-time metrics, predictive anomaly detection, and natural language root-cause analysis for microservices.`,
+    description: `Distop AI is a microservice monitoring platform designed for real-time system metrics tracking, machine-learning anomaly detection, and NLP root-cause incident triage.`,
     features: [
-      "Machine Learning anomaly detection algorithms tracking CPU, Memory & Network spikes.",
-      "NLP-driven root cause analysis providing human-readable incident summaries.",
-      "Responsive metric dashboards with real-time WebSocket updates.",
-      "Dockerized microservice architecture for seamless deployment."
+      "Machine Learning anomaly detection models monitoring CPU, Memory, and Network spikes.",
+      "NLP-driven root cause analysis outputting structured incident summaries.",
+      "Responsive metric dashboards with real-time WebSocket telemetry.",
+      "Dockerized architecture for seamless containerized deployment."
     ],
-    github: "https://github.com/MadheshN-eng",
-    demo: "#"
+    github: "https://github.com/MadheshN-eng"
   },
   hrscreening: {
-    title: "AI-Powered HR Screening & Code Assessment Application",
+    title: "AI-Powered HR Screening & Assessment Platform",
     stack: "MERN Stack, TypeScript, AI, Piston API",
-    description: `An end-to-end automated recruitment platform built for automated resume parsing, candidate scoring, and live multi-language code execution.`,
+    description: `An end-to-end recruitment application engineered for automated resume parsing, skill vector matching, and live multi-language code evaluation.`,
     features: [
-      "Automated candidate resume screening using vector search & skill matching.",
-      "Integrated Piston API for isolated code evaluation across Python, Java, C, and JS.",
-      "Role-based JWT authentication for recruiters, candidates, and admins.",
-      "Streamlined candidate tracking and evaluation workflows."
+      "Automated candidate resume parsing and vector search scoring.",
+      "Integrated Piston API for sandboxed multi-language code evaluation.",
+      "Role-based JWT authentication for recruiters and candidate workflows.",
+      "Streamlined candidate tracking and assessment pipelines."
     ],
-    github: "https://github.com/MadheshN-eng",
-    demo: "#"
+    github: "https://github.com/MadheshN-eng"
   },
   crackerscraze: {
-    title: "Crackers Craze – Bulk Product & Ordering Platform",
+    title: "Crackers Craze – Bulk Ordering & Comparison Platform",
     stack: "React, Tailwind CSS, Supabase, Node.js, Express.js",
-    description: `A full-stack bulk ecommerce and comparison engine equipped with OTP user verification and vendor product management.`,
+    description: `A full-stack bulk e-commerce platform equipped with OTP authentication, dynamic pricing comparison, and vendor product management.`,
     features: [
-      "Dynamic price comparison engine for bulk products.",
-      "OTP-based authentication & checkout workflow.",
-      "Vendor-wise product inventory management panel.",
-      "Supabase database integration with real-time updates."
+      "Dynamic price comparison engine for bulk product categories.",
+      "OTP-based registration and secure checkout workflow.",
+      "Vendor inventory administration panel with real-time updates.",
+      "Supabase database integration with cloud data synchronization."
     ],
-    github: "https://github.com/MadheshN-eng",
-    demo: "#"
+    github: "https://github.com/MadheshN-eng"
   }
 };
 
@@ -165,12 +161,12 @@ function openProjectModal(projectId) {
 }
 
 /* ==========================================================================
-   4. One-Click Copy Email & Toast Notifications
+   4. Copy Email & Toast Notifications
    ========================================================================== */
 function copyEmail() {
   const email = 'madheshdeepak71@gmail.com';
   navigator.clipboard.writeText(email).then(() => {
-    showToast('📧 Email copied to clipboard: madheshdeepak71@gmail.com');
+    showToast('📧 Email copied: madheshdeepak71@gmail.com');
   }).catch(() => {
     showToast('📧 Email: madheshdeepak71@gmail.com');
   });
@@ -198,7 +194,7 @@ function initStatCounters() {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const target = parseInt(entry.target.getAttribute('data-target'));
-        animateValue(entry.target, 0, target, 1500);
+        animateValue(entry.target, 0, target, 1200);
         observer.unobserve(entry.target);
       }
     });
